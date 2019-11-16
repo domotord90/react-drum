@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Digital dream";
+  src: url("../fonts/DIGITALDREAM.ttf");
+}
+
+.drum-pad {
+  width: 70px;
+  height: 70px;
+  border-radius: 1px;
+  background: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .drum-pad {
+    width: 120px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .drum-pad {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .drum-pad {
+    width: 15vw;
+    height: 17vh;
+  }
+}
