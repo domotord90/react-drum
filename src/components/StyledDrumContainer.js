@@ -10,21 +10,21 @@ const StyledDrumContainer = styled.div`
 
   @media only screen and (max-width: 767px) {
     width: 500px;
-    height: 50vh;
+    height: 50%;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     width: 1000px;
-    height: 70vh;
+    height: 70%;
   }
 
   @media only screen and (min-width: 992px) {
     width: 1800px;
-    height: 80vh;
+    height: 80%;
   }
   @media only screen and (min-width: 1200px) {
-    width: 90vw;
-    height: 90vh;
+    width: 90%;
+    height: 90%;
   }
 `;
 

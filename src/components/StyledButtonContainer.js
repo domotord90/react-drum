@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 const StyledButtonContainer = styled.div`
-  background: lightgray;
+  background: grey;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  align-items: center;
   grid-gap: 10px;
-  position: relative;
+  /* position: relative;
   top: 50px;
   left: 20px;
-  width: 300px;
+  width: 300px; */
+  width: 60%;
+  height: 60%;
   padding: 5px;
+  margin-left: 20px;
 
-  @media only screen and (min-width: 768px) {
+  /* @media only screen and (min-width: 768px) {
     width: 500px;
     height: 300px;
   }
@@ -25,7 +29,7 @@ const StyledButtonContainer = styled.div`
     top: 80px;
     width: 60vw;
     height: 60vh;
-  }
+  } */
 `;
 
 export default StyledButtonContainer;
