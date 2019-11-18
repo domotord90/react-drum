@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import StyledDrumContainer from "./StyledDrumContainer";
 import StyledDisplay from "./StyledDisplay";
 import StyledButtonContainer from "./StyledButtonContainer";
@@ -7,6 +7,7 @@ import "../styles/App.css";
 
 const App = () => {
   const [displayText, setDisplayText] = useState("");
+  const [volume, setVolume] = useState(50);
 
   const buttonClicked = e => {
     const { name, value, innerHTML } = e.target;
@@ -15,6 +16,13 @@ const App = () => {
     audio.play();
     setDisplayText(value);
   };
+
+  useEffect(() => {
+    const audios = document.getElementsByTagName("audio");
+    for (let i = 0; i < audios.length; i++) {
+      audios[i].volume = volume / 100;
+    }
+  }, [volume]);
 
   const buttonDown = e => {
     const { keyCode } = e;
@@ -35,6 +43,11 @@ const App = () => {
       );
       audio.play();
     }
+  };
+
+  const volumeChange = e => {
+    let { value } = e.target;
+    setVolume(parseInt(value, 10));
   };
 
   return (
@@ -157,15 +170,17 @@ const App = () => {
             C
           </button>
         </StyledButtonContainer>
-        <input
-          type="range"
-          style={{
-            width: "20%",
-            // height:"60px"
-            transform: "rotate(90deg)",
-            margin: "0 150px 260px 0"
-          }}
-        />
+        <div className="volume-control-container">
+          <input
+            type="range"
+            min={0}
+            max={100}
+            step={1}
+            value={volume}
+            className="volume-control"
+            onChange={volumeChange}
+          />
+        </div>
       </div>
     </StyledDrumContainer>
   );

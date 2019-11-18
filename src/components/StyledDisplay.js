@@ -16,7 +16,7 @@ const StyledDisplay = styled.input`
   text-align: right;
   padding-right: 5px;
 
-  @media only screen and (max-width: 767px) {
+  /* @media only screen and (max-width: 767px) {
     width: 200px;
   }
 
@@ -26,7 +26,7 @@ const StyledDisplay = styled.input`
 
   @media only screen and (min-width: 1200px) {
     width: 30vw;
-  }
+  } */
 `;
 
 export default StyledDisplay;

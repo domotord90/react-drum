@@ -7,6 +7,9 @@ const StyledDrumContainer = styled.div`
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 
   @media only screen and (max-width: 767px) {
     width: 500px;
