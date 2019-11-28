@@ -51,7 +51,7 @@
   transition: opacity 0.2s;
   border-radius: 20px;
   position: relative;
-  top: 150px;
+  top: 100px;
 }
 
 .volume-control::-webkit-slider-thumb {
