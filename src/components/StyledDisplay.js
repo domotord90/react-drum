@@ -2,14 +2,10 @@ import styled from "styled-components";
 
 const StyledDisplay = styled.input`
   background: aquamarine;
-  /* width: 250px; */
   width: 30%;
   border: 1px solid black;
   border-radius: 5px;
   align-self: flex-end;
-  /* position: relative; */
-  /* right: 20px; */
-  /* top: 30px; */
   margin: 20px 20px 20px 0;
   height: 30px;
   font-weight: bold;
