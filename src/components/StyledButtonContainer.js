@@ -11,6 +11,10 @@ const StyledButtonContainer = styled.div`
   height: 70%;
   padding: 5px;
   margin-left: 20px;
+
+  @media screen and (orientation: landscape) {
+    height: 80%;
+  }
 `;
 
 export default StyledButtonContainer;

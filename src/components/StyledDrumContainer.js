@@ -11,6 +11,10 @@ const StyledDrumContainer = styled.div`
   height: 60%;
   width: 90%;
 
+  @media screen and (orientation: landscape) {
+    height: 95%;
+  }
+
   /* @media only screen and (max-width: 767px) {
     width: 500px;
     height: 50%;
