@@ -11,7 +11,7 @@ const StyledDrumContainer = styled.div`
   height: 100%;
   width: 100%;
 
-  @media only screen and (max-width: 767px) {
+  /* @media only screen and (max-width: 767px) {
     width: 500px;
     height: 50%;
   }
@@ -28,7 +28,7 @@ const StyledDrumContainer = styled.div`
   @media only screen and (min-width: 1200px) {
     width: 90%;
     height: 90%;
-  }
+  } */
 `;
 
 export default StyledDrumContainer;
