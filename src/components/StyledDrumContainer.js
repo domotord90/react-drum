@@ -8,8 +8,8 @@ const StyledDrumContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 90%;
 
   /* @media only screen and (max-width: 767px) {
     width: 500px;
